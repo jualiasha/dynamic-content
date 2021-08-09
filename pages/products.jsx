@@ -3,24 +3,31 @@ import Form from '../components/Form/Form';
 
 const productFormFields = [
     {
-        id: 'email',
-        name: 'email',
-        type: 'email',
-        label: 'Email *',
+        id: 'name',
+        name: 'name',
+        type: 'text',
+        label: 'Product Name *',
         required: true,
     },
     {
-        id: 'password',
-        name: 'password',
-        type: 'password',
-        label: 'Password *',
+        id: 'description',
+        name: 'description',
+        type: 'text',
+        label: 'Description *',
         required: true,
     },
     {
-        id: 'password2',
-        name: 'password',
-        type: 'password',
-        label: 'Confirm Password *',
+        id: 'price',
+        name: 'price',
+        type: 'text',
+        label: 'Price *',
+        required: true,
+    },
+    {
+        id: 'picture',
+        name: 'picture',
+        type: 'text',
+        label: 'Picture url *',
         required: true,
     },
 ];

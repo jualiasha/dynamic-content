@@ -29,18 +29,23 @@ const Form = ({ url, method, inputFields, buttonText }) => {
         <form onSubmit={submitHandler}>
             <div className="container">
                 <div className="row d-flex justify-content-center">
-                    {inputFields.map((input) => {
-                        return (
-                            <Input
-                                key={input.id}
-                                id={input.id}
-                                name={input.name}
-                                type={input.type}
-                                label={input.label}
-                                required={input.required}
-                            />
-                        );
-                    })}
+                    <div className="col-md-6">
+                        {inputFields.map((input) => {
+                            return (
+                                <Input
+                                    key={input.id}
+                                    id={input.id}
+                                    name={input.name}
+                                    type={input.type}
+                                    label={input.label}
+                                    required={input.required}
+                                />
+                            );
+                        })}
+                    </div>
+                </div>
+
+                <div className="row d-flex justify-content-center">
                     <div className="col-md-6">
                         <Button type="submit" color="success">
                             {buttonText}
